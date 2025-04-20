@@ -1,0 +1,6 @@
+@openshift_web_api_test_HostAddress = http://localhost:5053
+
+GET {{openshift_web_api_test_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

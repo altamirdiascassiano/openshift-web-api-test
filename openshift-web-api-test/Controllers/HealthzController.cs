@@ -22,7 +22,7 @@ namespace openshift_web_api_test.Controllers
         [HttpGet(Name = "Healthz")]
         public ActionResult Get()
         {
-            return _status.IsHealthy ? Ok("Healthy") :  StatusCode(500);
+            return _status.IsHealthy ? Ok($"Healthy {_status.IsHealthy}") :  StatusCode(500);
         }
 
         [HttpGet("toggle-health")]        
